@@ -49,56 +49,66 @@ toggleSelect();
 
 //   setInterval(() => { nextSlide() }, 3000)
 // }
-window.onload = () => responsiveSlider();
+// window.onload = () => responsiveSlider();
 
-let slideIndex, slides, dots, captionText;
-const initSlider = () => {
-  slideIndex = 0;
-  slides = document.getElementsByClassName('imageHolder');
-  slides[slideIndex].style.opacity = 1;
+// let slideIndex, slides, dots, captionText;
+// const initSlider = () => {
+//   slideIndex = 0;
+//   slides = document.getElementsByClassName('imageHolder');
+//   slides[slideIndex].style.opacity = 1;
 
-  captionText = document.querySelector('.captionHolder .captionText')
-  captionText.innerText = slides[slideIndex].querySelector(".captionText").innerText;
+//   captionText = document.querySelector('.captionHolder .captionText')
+//   captionText.innerText = slides[slideIndex].querySelector(".captionText").innerText;
 
-  dots = [];
-  let dotsContainer = document.querySelector('.dotsContainer');
-  [...slides].forEach(() => {
-    let dot = document.createElement('span');
-    dot.classList.add("dots");
-    dotsContainer.append(dot);
-    dots.push(dot);
-  });
-  dots[slideIndex].classList.add('active');
-}
-initSlider();
+//   dots = [];
+//   let dotsContainer = document.querySelector('.dotsContainer');
+//   [...slides].forEach(() => {
+//     let dot = document.createElement('span');
+//     dot.classList.add("dots");
+//     dotsContainer.append(dot);
+//     dots.push(dot);
+//   });
+//   dots[slideIndex].classList.add('active');
+// }
+// initSlider();
 
-const addSlides = (n) => {
-  moveSlide(slideIndex+n)
-}
-const moveSlide = () => {
-  let i, current, next;
+// const addSlides = (n) => {
+//   moveSlide(slideIndex + n)
+// }
+// const moveSlide = () => {
+//   let i, current, next;
 
-  let moveSlideAnimClass = {
-    forCurrent: "",
-    forNext: ""
-  }
-  if (n > slideIndex) {
-    moveSlideAnimClass.forCurrent = "moveLeftCurrentSlide";
-    moveSlideAnimClass.forNext = "moveLeftNextSlide"
-  } else if (n < slideIndex) {
-    
-  }
-  if (n != slideIndex) {
-    next = slides(n)
-    current = slides[slideIndex];
-    [...slides].forEach(slide => {
-      slide.className = 'imageHolder';
-      slide.style.opacity = 0;
-      dots[i].classList.remove('active');
-    });
-    current.classList.add(moveSlideAnimClass.forCurrent);
-    next.classList.add(moveSlideAnimClass.forNext);
-    dots[n].classList.add('active');
-    slideIndex = n;
-  }
-}
+//   let moveSlideAnimClass = {
+//     forCurrent: "",
+//     forNext: ""
+//   }
+//   if (n > slideIndex) {
+//     moveSlideAnimClass.forCurrent = "moveLeftCurrentSlide";
+//     moveSlideAnimClass.forNext = "moveLeftNextSlide"
+//   } else if (n < slideIndex) {
+
+//   }
+//   if (n != slideIndex) {
+//     next = slides(n)
+//     current = slides[slideIndex];
+//     [...slides].forEach(slide => {
+//       slide.className = 'imageHolder';
+//       slide.style.opacity = 0;
+//       dots[i].classList.remove('active');
+//     });
+//     current.classList.add(moveSlideAnimClass.forCurrent);
+//     next.classList.add(moveSlideAnimClass.forNext);
+//     dots[n].classList.add('active');
+//     slideIndex = n;
+//   }
+// }
+
+const filter = document.querySelector('.filter');
+const secNav = document.querySelector('.secondary-nav');
+
+filter.addEventListener('click', () => {
+  console.log('====>')
+  secNav.classList.toggle('active');
+  console.log('X====>')
+
+}, null);
