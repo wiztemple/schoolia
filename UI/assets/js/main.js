@@ -13,10 +13,10 @@ const toggleSelect = () => {
 toggleSelect();
 
 const filter = document.querySelector('.filter');
-const secNav = document.querySelector('.secondary-nav');
+const filterparams = document.querySelector('.filterparams');
 
 filter.addEventListener('click', () => {
-  secNav.classList.toggle('active');
+  filterparams.classList.toggle('active');
 }, null);
 
 document.addEventListener('DOMContentLoaded', () => {
