@@ -63,3 +63,10 @@ document.addEventListener('click', e => {
   });
 })
 
+const options = document.querySelectorAll('.option');
+
+[...options].forEach(option => {
+  option.addEventListener('click', () => {
+    option.classList.toggle('active');
+  });
+});
