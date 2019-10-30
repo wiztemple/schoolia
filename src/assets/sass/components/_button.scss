@@ -1,0 +1,78 @@
+.button {
+	display: inline-block;
+	font: inherit;
+	color: #5fc487;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	user-select: none;
+	border: 1px solid transparent;
+	padding: 0.625rem 1.25rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: .25rem;
+	cursor: pointer;
+}
+.button:focus {
+	outline: none;
+}
+
+.button-icons {
+	color: #5fc487;
+	padding: 0.5rem .5rem;
+	background-color: transparent;
+}
+.button-green {
+	color: #fff;
+	background-color: #5fc487;
+	background-image: linear-gradient(180deg, #25b35e8e, #2be2747e);
+}
+.button-green:hover {
+	background-color: rgba(95, 196, 136, 0.726);
+}
+.button-outline {
+	border: 1px solid #eee;
+}
+.button-outline:hover {
+	background-color: rgba(238, 238, 238, 0.432);
+}
+.button-icons:hover {
+	background-color: rgba(95, 196, 136, 0.082);
+}
+
+.button-default {
+	color: #5fc487;
+	background-color: #5fc48813;
+	background-image: linear-gradient(180deg, #fff, #f5f5fa);
+}
+.button-rounded {
+	border-radius: 9999px;
+}
+.button-shadow {
+	box-shadow: 0 4px 11px 0 rgba(37, 44, 97, .15), 0 1px 3px 0 rgba(93, 100, 148, .2);
+}
+.button-inset {
+	box-shadow: 0 7px 14px -3px rgba(45, 35, 66, 0.3), 0 2px 4px 0 rgba(45, 35, 66, 0.1), inset 0 -2px 0 0 #cfd1;
+	background: linear-gradient(#fff, #eee) no-repeat;
+}
+.button-blue {
+	background-color: #0c65f3;
+	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+	color: #fff;
+}
+.button-blue:hover {
+	background-color: #2561c0;
+}
+.button-plain:hover {
+	color: #5fc487;
+	background-color: rgba(95, 196, 136, 0.082);
+}
+.button-default:hover {
+	background-color: #5fc48825;
+	transition: background-color ease-in-out .2s;
+}
+.button-block {
+	width: 100%;
+	display: block;
+}

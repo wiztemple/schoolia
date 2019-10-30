@@ -52,6 +52,10 @@ exports.reduceUserDetails = (data) => {
 			userDetails.website = `http://${data.website.trim()}`;
 		} else userDetails.website = data.website;
 	}
+	if (!isEmpty(data.school.trim())) userDetails.school = data.school;
+	if (!isEmpty(data.course_of_study.trim())) userDetails.course_of_study = data.course_of_study;
+	if (!isEmpty(data.year_of_admission.trim())) userDetails.year_of_admission = data.year_of_admission;
+	if (!isEmpty(data.year_of_graduation.trim())) userDetails.year_of_graduation = data.year_of_graduation;
 	if (!isEmpty(data.location.trim())) userDetails.location = data.location;
 
 	return userDetails;

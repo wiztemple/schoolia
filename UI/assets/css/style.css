@@ -100,7 +100,8 @@ body {
 .navbar {
 	background-color: #fff;
 	height: 4.063rem;
-	box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.1), 0 0px 0px 0 rgba(0, 0, 0, 0.06);
+	/* box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.1), 0 0px 0px 0 rgba(0, 0, 0, 0.06); */
+	box-shadow: 0 1px #ffffff inset, 0 1px 3px rgba(34, 25, 25, 0.068);
 	position: relative;
 	z-index: 100;
 }
@@ -1650,4 +1651,15 @@ body.bg {
 	margin-top: 20px;
 	padding: 20px;
 	background-color: rgba(0, 0, 0, 0.911);
+}
+
+nav :any-link {
+	color: red;
+}
+
+nav:matches(:first-child, .special) {
+	color: red;
+}
+.foo {
+	background-image: image-set();
 }
