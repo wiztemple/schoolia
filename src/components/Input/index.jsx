@@ -2,9 +2,6 @@ import React from 'react';
 
 const Input = (props) => {
 	let { size, type, value, disabled, error, onChange, placeholder, className } = props;
-	// type = !type ? 'text' : type;
-	// size = !size ? 'input-field' : size;
-	console.log(props);
 	return (
 		<div className="input-control">
 			<input
