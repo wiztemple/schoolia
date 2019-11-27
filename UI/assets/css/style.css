@@ -103,10 +103,14 @@ body {
 }
 .banner {
 	width: 100vw;
-	height: 100vh;
+	height: 80vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background: url('../icons/map.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
 }
 /* .app {
 	background: url('../images/antiq.jpg') top right no-repeat, url('../images/campus.jpg') no-repeat;
@@ -1294,12 +1298,32 @@ body.bg {
 .school-card {
 	display: flex;
 	padding: 10px;
-	background-color: #fff;
+	background-color: transparent;
 	border-radius: 5px;
 	/* box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); */
 }
 .school-card span {
 	color: #1f65e6;
+}
+/* search suggestion card */
+.suggestion-card {
+	display: none;
+	width: 100%;
+	background-color: #fff;
+	position: absolute;
+	left: 0;
+	right: 0;
+	padding: 20px 20px;
+	margin-top: 20px;
+	border-radius: 5px;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	z-index: 1000;
+}
+.pills {
+	background-color: #eff6fc;
+	color: #444;
+	padding: 10px 20px;
+	border-radius: 30px;
 }
 .school-card-details {
 	font-size: 13px;
@@ -1309,6 +1333,9 @@ body.bg {
 	background-color: #eff6fc;
 	cursor: pointer;
 	transition: ease-in-out .3s;
+}
+.suggestion-card.active {
+	display: block;
 }
 .details-bar {
 	padding: 20px 10px;
@@ -1511,16 +1538,37 @@ body.bg {
 }
 .sidebar {
 	height: 100vh;
+	position: sticky;
+	left: 0;
+	top: 100px;
 	background-color: #fff;
 	z-index: 1000;
 }
-.main {
-	z-index: 10;
+.sidebar > h1 {
+	padding: 20px;
 }
 
 .sidebar-child {
+	position: relative;
+}
+.sidebar-item {
 	width: 100%;
-	padding: 15px;
+	color: #777;
+	font-size: 14px;
+	display: inline-block;
+	padding: 8px 20px;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+.sidebar-item.active {
+	color: #1f65e6;
+	background-color: #eff6fc;
+	transition: all ease-in-out .1s;
+}
+.sidebar-item:hover {
+	color: #1f65e6;
+	background-color: #eff6fc;
+	transition: all ease-in-out .1s;
 }
 .search-menu {
 	width: 100%;
@@ -1716,6 +1764,8 @@ body.bg {
 .footer {
 	display: flex;
 	align-items: center;
+	position: sticky;
+	top: 0;
 	margin-top: 20px;
 	padding: 20px;
 	background-color: #fff;

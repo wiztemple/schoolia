@@ -47,14 +47,17 @@ document.addEventListener(
 
 // modal
 const modals = document.querySelectorAll('.modal');
+const suggestionCard = document.querySelector('.suggestion-card');
 const buttons = document.querySelectorAll('.button-click');
 const cancelButtons = document.querySelectorAll('.close-modal');
-// const searchBar = document.getElementById('search-bar');
+const searchBar = document.getElementById('search-bar');
 
-// searchBar.addEventListener('focus', () => {
-// 	const modal = [ ...modals ].find((modal) => modal.dataset.id === searchBar.dataset.target);
-// 	modal.style.display = 'block';
-// });
+searchBar.addEventListener('focus', () => {
+	suggestionCard.style.display = 'block';
+});
+searchBar.addEventListener('blur', () => {
+	suggestionCard.style.display = 'none';
+});
 
 buttons.forEach((button) => {
 	button.addEventListener('click', () => {
