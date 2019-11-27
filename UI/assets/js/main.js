@@ -1,27 +1,27 @@
-const selectItems = document.querySelectorAll('.flames-select');
-const toggleSelect = () => {
-	selectItems.forEach((selectItem) => {
-		const inputField = selectItem.querySelector('.input-field');
-		const icon = selectItem.querySelector('.icon-right');
-		const ul = selectItem.querySelector('.select-item');
-		inputField.addEventListener('click', () => {
-			ul.classList.toggle('active');
-			icon.classList.toggle('active');
-		});
-	});
-};
-toggleSelect();
+// const selectItems = document.querySelectorAll('.flames-select');
+// const toggleSelect = () => {
+// 	selectItems.forEach((selectItem) => {
+// 		const inputField = selectItem.querySelector('.input-field');
+// 		const icon = selectItem.querySelector('.icon-right');
+// 		const ul = selectItem.querySelector('.select-item');
+// 		inputField.addEventListener('click', () => {
+// 			ul.classList.toggle('active');
+// 			icon.classList.toggle('active');
+// 		});
+// 	});
+// };
+// toggleSelect();
 
-const filter = document.querySelector('.filter');
-const secNav = document.querySelector('.secondary-nav');
+// const filter = document.querySelector('.filter');
+// const secNav = document.querySelector('.secondary-nav');
 
-filter.addEventListener(
-	'click',
-	() => {
-		secNav.classList.toggle('active');
-	},
-	null
-);
+// filter.addEventListener(
+// 	'click',
+// 	() => {
+// 		secNav.classList.toggle('active');
+// 	},
+// 	null
+// );
 
 document.addEventListener(
 	'DOMContentLoaded',
@@ -49,6 +49,12 @@ document.addEventListener(
 const modals = document.querySelectorAll('.modal');
 const buttons = document.querySelectorAll('.button-click');
 const cancelButtons = document.querySelectorAll('.close-modal');
+// const searchBar = document.getElementById('search-bar');
+
+// searchBar.addEventListener('focus', () => {
+// 	const modal = [ ...modals ].find((modal) => modal.dataset.id === searchBar.dataset.target);
+// 	modal.style.display = 'block';
+// });
 
 buttons.forEach((button) => {
 	button.addEventListener('click', () => {
