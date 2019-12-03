@@ -1,3 +1,5 @@
+![David](https://img.shields.io/david/dev/wiztemple/schoolia?style=plastic)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

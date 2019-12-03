@@ -26,17 +26,13 @@
           </div>
           <div class="nav-menu" id="navMenu">
             <div class="navbar-left">
-    
+              <a class="navbar-item" href="index.html">HOME</a>
+              <a class="navbar-item" href="courses.html">COURSES</a>
+              <a class="navbar-item" href="#">API DOCUMENTATION</a>
+              <div class="navbar-item inject-search"></div>
             </div>
             <div class="navbar-right">
-              <div class="navbar-item">
-                <button class="button button-icons filter">
-                  <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.77778 12.5H12.2222V10.5H7.77778V12.5ZM0 0.5V2.5H20V0.5H0ZM3.33333 7.5H16.6667V5.5H3.33333V7.5Z"
-                      fill="#4884f9" />
-                  </svg> Filter
-                </button>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -214,27 +210,38 @@
                           <button class="mt-10 button button-blue button-rounded button-shadow">Post comment</button>
                         </div>
                         <div class="mt-20">
-                          <div class="opinion bb-grey-1 hover-bg-lightgrey">
-                            <div class="flex-start pd-15">
-                              <div><img class="avatar-md" src="./UI/assets/images/book.jpg" alt=""></div>
-                              <div class="ml-10">
-                                <span class="postername">Civil Twilight</span>
-                                <p class="fs-13 lh-16 fw-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo odio
+                          <div class="opinion">
+                            <div class="comment-box">
+                              <div class="flex-start align-center">
+                                <img class="avatar-md" src="./UI/assets/images/book.jpg" alt="">
+                                <div class="user-details">
+                                  <span class="postername">Civil Twilight</span>
+                                  <span class="comment-time">23 mins ago</span>
+                                </div>
+                              </div>
+                              <div>
+                                <p class="comment-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo odio
                                   nulla omnis asperiores
                                   quos, natus labore, placeat in corrupti doloribus delectus expedita iusto, explicabo
                                   repudiandae
                                   consequuntur saepe
                                   molestias tenetur. Neque!</p>
                                 <div class="flex-start">
-                                  <span>&#8618; <span class="fs-14 bold-600 blue hover-underline">Reply</span></span>
+                                  <span> <button class="button button-small feint-button button-rounded">&#8618; Reply</button></span>
                                 </div>
                               </div>
                             </div>
-                            <div class="reply-to-opinion flex-start ml-60 mb-10 bg-lightgrey pd-15 by-grey-1">
-                              <div><img class="avatar-md" src="./UI/assets/images/book.jpg" alt=""></div>
-                              <div class="ml-10">
-                                <span class="postername">Owl City</span>
-                                <p class="fs-13 lh-16 fw-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo odio
+                            <div class="reply-to-comment">
+                              <div class="flex-start align-center">
+                                <img class="avatar-md" src="./UI/assets/images/book.jpg" alt="">
+                                <div class="user-details">
+                                  <span class="postername">Obi Chinyere</span>
+                                  <span class="comment-time">23 mins ago</span>
+                                </div>
+                              </div>
+                              <div>
+                                
+                                <p class="reply-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo odio
                                   nulla omnis asperiores
                                   quos, natus labore, placeat in corrupti doloribus delectus expedita iusto, explicabo
                                   repudiandae
@@ -242,39 +249,56 @@
                                   saepe
                                   molestias tenetur. Neque!</p>
                                 <div class="flex-start">
-                                  <span>&#8618; <span class="fs-14 bold-600 blue hover-underline">Reply</span></span>
+                                  <span> <button class="button button-small feint-button button-rounded">&#8618; Reply</button></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="reply-to-comment">
+                              <div class="flex-start align-center">
+                                <img class="avatar-md" src="./UI/assets/images/book.jpg" alt="">
+                                <div class="user-details">
+                                  <span class="postername">Edwin Ukaegbu</span>
+                                  <span class="comment-time">23 mins ago</span>
+                                </div>
+                              </div>
+                              <div>
+                            
+                                <p class="reply-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo odio
+                                  nulla omnis asperiores
+                                  quos, natus labore, placeat in corrupti doloribus delectus expedita iusto, explicabo
+                                  repudiandae
+                                  consequuntur
+                                  saepe
+                                  molestias tenetur. Neque!</p>
+                                <div class="flex-start">
+                                  <span> <button class="button button-small feint-button button-rounded">&#8618; Reply</button></span>
                                 </div>
                               </div>
                             </div>
                           </div>
-                          <div class="opinion flex-start pd-15 bb-grey-1 hover-bg-lightgrey">
-                            <div><img class="avatar-md" src="./UI/assets/images/book.jpg" alt=""></div>
-                            <div class="ml-10">
-                              <span class="postername">George Ezra</span>
-                              <p class="fs-13 lh-16 fw-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo odio
+                        <div class="opinion">
+                          <div class="comment-box">
+                            <div class="flex-start align-center">
+                              <img class="avatar-md" src="./UI/assets/images/book.jpg" alt="">
+                              <div class="user-details">
+                                <span class="postername">Ada Edwin</span>
+                                <span class="comment-time">1 hour ago</span>
+                              </div>
+                            </div>
+                            <div>
+                              <p class="comment-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo odio
                                 nulla omnis asperiores
-                                quos, natus labore, placeat in corrupti doloribus delectus expedita iusto, explicabo repudiandae
-                                consequuntur
-                                saepe molestias tenetur. Neque!</p>
+                                quos, natus labore, placeat in corrupti doloribus delectus expedita iusto, explicabo
+                                repudiandae
+                                consequuntur saepe
+                                molestias tenetur. Neque!</p>
                               <div class="flex-start">
-                                <span>&#8618; <span class="fs-14 bold-600 blue hover-underline">Reply</span></span>
+                                <span> <button class="button button-small feint-button button-rounded">&#8618; Reply</button></span>
                               </div>
                             </div>
                           </div>
-                          <div class="opinion flex-start pd-15 bb-grey-1 hover-bg-lightgrey">
-                            <div><img class="avatar-md" src="./UI/assets/images/book.jpg" alt=""></div>
-                            <div class="ml-10">
-                              <span class="postername">Jeremiah Gyang</span>
-                              <p class="fs-13 lh-16 fw-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo odio
-                                nulla omnis asperiores
-                                quos, natus labore, placeat in corrupti doloribus delectus expedita iusto, explicabo repudiandae
-                                consequuntur
-                                saepe molestias tenetur. Neque!</p>
-                              <div class="flex-start">
-                                <span>&#8618; <span class="fs-14 bold-600 blue hover-underline">Reply</span></span>
-                              </div>
-                            </div>
-                          </div>
+                        </div>
+                          
                         </div>
                       </div>
                     </div>

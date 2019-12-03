@@ -27,9 +27,9 @@
           </div>
           <div class="nav-menu" id="navMenu">
             <div class="navbar-left">
-              <a class="navbar-item active">HOME</a>
-              <a class="navbar-item">COURSES</a>
-              <a class="navbar-item">API DOCUMENTATION</a>
+              <a class="navbar-item active" href="index.html">HOME</a>
+              <a class="navbar-item" href="courses.html">COURSES</a>
+              <a class="navbar-item" href="#">API DOCUMENTATION</a>
               <div class="navbar-item inject-search"></div>
             </div>
             <div class="navbar-right">
@@ -90,7 +90,7 @@
         </div>
       </div> -->
       <div class="banner">
-        <div class="container">
+        <div class="container is-fluid">
           <div class="columns">
             <div class="col-3"></div>
             <div class="col-6">
@@ -175,7 +175,7 @@
                   <span class="h7 pb-0">
                     UNIVERSITY
                   </span><br />
-                  <a class="school-card-details">
+                  <a class="school-card-details" href="list.html">
                     120+ Universities
                   </a>
                 </div>
@@ -581,7 +581,7 @@
           </div>
           <div class="columns">
             <div class="col-6">
-              <div class="rectcard">
+              <div class="rectcard button-click"  data-target="2">
                 <img class="rectcard-image" src="./UI/assets/images/school4.jpg" alt="dawn">
                 <div class="rectcard-content">
                   <div class="rectcard-title">Federal University of Technology, Owerri(FUTO)</div>
@@ -688,7 +688,7 @@
           </div>
           <div class="columns">
             <div class="col-6">
-              <div class="rectcard">
+              <div class="rectcard button-click" data-target="2">
                 <img class="rectcard-image" src="./UI/assets/images/lib.jpg" alt="dawn">
                 <div class="rectcard-content">
                   <div class="rectcard-title">Federal University of Petroleum Resources, Effurun(FUPRE)</div>
@@ -740,7 +740,7 @@
               </div>
             </div>
             <div class="col-6">
-              <div class="rectcard">
+              <div class="rectcard button-click" data-target="2">
                 <img class="rectcard-image" src="./UI/assets/images/school3.jpg" alt="dawn">
                 <div class="rectcard-content">
                   <div class="rectcard-title">Federal University of Technology, Minna(FUTMINNA)</div>
@@ -1332,69 +1332,97 @@
                 </form>
                 <button class="mt-10 button button-blue button-rounded button-shadow">Post comment</button>
               </div>
-              <div class="mt-20">
-                <div class="opinion bb-grey-1 hover-bg-lightgrey">
-                  <div class="flex-start pd-15">
-                    <div><img class="avatar-md" src="./UI/assets/images/book.jpg" alt=""></div>
-                    <div class="ml-10">
+            <div class="mt-20">
+              <div class="opinion">
+                <div class="comment-box">
+                  <div class="flex-start align-center">
+                    <img class="avatar-md" src="./UI/assets/images/book.jpg" alt="">
+                    <div class="user-details">
                       <span class="postername">Civil Twilight</span>
-                      <p class="fs-13 lh-16 fw-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo odio
-                        nulla omnis asperiores
-                        quos, natus labore, placeat in corrupti doloribus delectus expedita iusto, explicabo
-                        repudiandae
-                        consequuntur saepe
-                        molestias tenetur. Neque!</p>
-                      <div class="flex-start">
-                        <span>&#8618; <span class="fs-14 bold-600 blue hover-underline">Reply</span></span>
-                      </div>
+                      <span class="comment-time">23 mins ago</span>
                     </div>
                   </div>
-                  <div class="reply-to-opinion flex-start ml-60 mb-10 bg-lightgrey pd-15 by-grey-1">
-                    <div><img class="avatar-md" src="./UI/assets/images/book.jpg" alt=""></div>
-                    <div class="ml-10">
-                      <span class="postername">Owl City</span>
-                      <p class="fs-13 lh-16 fw-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo odio
-                        nulla omnis asperiores
-                        quos, natus labore, placeat in corrupti doloribus delectus expedita iusto, explicabo
-                        repudiandae
-                        consequuntur
-                        saepe
-                        molestias tenetur. Neque!</p>
-                      <div class="flex-start">
-                        <span>&#8618; <span class="fs-14 bold-600 blue hover-underline">Reply</span></span>
-                      </div>
+                  <div>
+                    <p class="comment-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo odio
+                      nulla omnis asperiores
+                      quos, natus labore, placeat in corrupti doloribus delectus expedita iusto, explicabo
+                      repudiandae
+                      consequuntur saepe
+                      molestias tenetur. Neque!</p>
+                    <div class="flex-start">
+                      <span> <button class="button button-small feint-button button-rounded">&#8618; Reply</button></span>
                     </div>
                   </div>
                 </div>
-                <div class="opinion flex-start pd-15 bb-grey-1 hover-bg-lightgrey">
-                  <div><img class="avatar-md" src="./UI/assets/images/book.jpg" alt=""></div>
-                  <div class="ml-10">
-                    <span class="postername">George Ezra</span>
-                    <p class="fs-13 lh-16 fw-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo odio
+                <div class="reply-to-comment">
+                  <div class="flex-start align-center">
+                    <img class="avatar-md" src="./UI/assets/images/book.jpg" alt="">
+                    <div class="user-details">
+                      <span class="postername">Obi Chinyere</span>
+                      <span class="comment-time">23 mins ago</span>
+                    </div>
+                  </div>
+                  <div>
+            
+                    <p class="reply-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo odio
                       nulla omnis asperiores
-                      quos, natus labore, placeat in corrupti doloribus delectus expedita iusto, explicabo repudiandae
+                      quos, natus labore, placeat in corrupti doloribus delectus expedita iusto, explicabo
+                      repudiandae
                       consequuntur
-                      saepe molestias tenetur. Neque!</p>
+                      saepe
+                      molestias tenetur. Neque!</p>
                     <div class="flex-start">
-                      <span>&#8618; <span class="fs-14 bold-600 blue hover-underline">Reply</span></span>
+                      <span> <button class="button button-small feint-button button-rounded">&#8618; Reply</button></span>
                     </div>
                   </div>
                 </div>
-                <div class="opinion flex-start pd-15 bb-grey-1 hover-bg-lightgrey">
-                  <div><img class="avatar-md" src="./UI/assets/images/book.jpg" alt=""></div>
-                  <div class="ml-10">
-                    <span class="postername">Jeremiah Gyang</span>
-                    <p class="fs-13 lh-16 fw-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo odio
+                <div class="reply-to-comment">
+                  <div class="flex-start align-center">
+                    <img class="avatar-md" src="./UI/assets/images/book.jpg" alt="">
+                    <div class="user-details">
+                      <span class="postername">Edwin Ukaegbu</span>
+                      <span class="comment-time">23 mins ago</span>
+                    </div>
+                  </div>
+                  <div>
+            
+                    <p class="reply-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo odio
                       nulla omnis asperiores
-                      quos, natus labore, placeat in corrupti doloribus delectus expedita iusto, explicabo repudiandae
+                      quos, natus labore, placeat in corrupti doloribus delectus expedita iusto, explicabo
+                      repudiandae
                       consequuntur
-                      saepe molestias tenetur. Neque!</p>
+                      saepe
+                      molestias tenetur. Neque!</p>
                     <div class="flex-start">
-                      <span>&#8618; <span class="fs-14 bold-600 blue hover-underline">Reply</span></span>
+                      <span> <button class="button button-small feint-button button-rounded">&#8618; Reply</button></span>
                     </div>
                   </div>
                 </div>
               </div>
+              <div class="opinion">
+                <div class="comment-box">
+                  <div class="flex-start align-center">
+                    <img class="avatar-md" src="./UI/assets/images/book.jpg" alt="">
+                    <div class="user-details">
+                      <span class="postername">Ada Edwin</span>
+                      <span class="comment-time">1 hour ago</span>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="comment-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo odio
+                      nulla omnis asperiores
+                      quos, natus labore, placeat in corrupti doloribus delectus expedita iusto, explicabo
+                      repudiandae
+                      consequuntur saepe
+                      molestias tenetur. Neque!</p>
+                    <div class="flex-start">
+                      <span> <button class="button button-small feint-button button-rounded">&#8618; Reply</button></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
             </div>
           </div>
         </div>
@@ -1405,7 +1433,7 @@
     </div>
   </div>
   <div class="modal" data-id="3">
-    <div class="modal-content">
+    <div class="modal-content-sm">
       <div class="modal-header">
         <h1 class="text-center">Join Schoolia</h1>
         <p class="f-14 text-center pd-20">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, quis?</p>
